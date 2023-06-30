@@ -5,6 +5,13 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import AddBoxIcon from '@mui/icons-material/AddBox';
 import {useState } from 'react'
 import {TextField } from '@mui/material'
+import Radio from '@mui/material/Radio';
+import {FormControl } from '@mui/material';
+import RadioGroup  from '@mui/material/RadioGroup';
+import FormControlLabel from '@mui/material/FormControlLabel';
+
+
+
 
 
 
@@ -88,7 +95,20 @@ const Navbar = () => {
 
             </Container>
 
-
+            <Container>
+                <FormControl>
+                    <RadioGroup
+                      
+                    
+                    
+                    >
+                            <FormControlLabel value="Owais" control={<Radio/>} label="Engineer"/>
+                            <FormControlLabel value="female" control={<Radio />} label="Female" />
+                            <FormControlLabel value="male" control={<Radio />} label="Male" />
+                            <FormControlLabel value="other" control={<Radio />} label="Other" />
+                    </RadioGroup>
+                </FormControl>
+            </Container>
           
 
         </div>
